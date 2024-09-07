@@ -74,7 +74,7 @@ const SideNav = () => {
         <Button
           radius="sm"
           className="font-bold w-full bg-[#FFA500]"
-          onClick={handleLogout}
+          // onClick={handleLogout}
         >
           Logout
         </Button>

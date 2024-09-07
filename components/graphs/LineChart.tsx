@@ -37,13 +37,14 @@ const LineChart = () => {
       "12 AM",
       "2 AM",
       "4 AM",
+      "6 AM",
     ],
     datasets: [
       {
         label: "Peak Load (MW)",
-        data: [4500, 4700, 4900, 5550, 5250, 4750, 4800, 4700, 4600, 4700],
-        borderColor: "#006fee",
-        backgroundColor: "#006fee",
+        data: [4500, 4700, 4900, 5550, 5250, 4750, 4800, 4700, 4600, 4700, 4900],
+        borderColor: "#FFCD71",
+        backgroundColor: "#734A00",
         tension: 0.4,
       },
     ],
@@ -70,7 +71,7 @@ const LineChart = () => {
     },
   };
 
-  return <Line data={data} options={options} />;
+  return <Line data={data} style={{height: "300px"}} options={options} />;
 };
 
 export default LineChart;
